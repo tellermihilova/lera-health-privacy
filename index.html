@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the personal Lera Health Monitor WHOOP integration.">
+  <title>WHOOP Privacy Policy — Lera Health Monitor</title>
+  <style>
+    :root { color-scheme: light dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; background: #f3f6f8; color: #172126; line-height: 1.65; }
+    main { box-sizing: border-box; width: min(900px, calc(100% - 32px)); margin: 32px auto; padding: clamp(24px, 5vw, 56px); background: #fff; border: 1px solid #dce4e8; border-radius: 20px; box-shadow: 0 16px 50px rgba(23, 33, 38, .08); }
+    h1, h2 { line-height: 1.2; color: #0d3131; }
+    h1 { margin: .15em 0 .4em; font-size: clamp(2rem, 5vw, 3.25rem); }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    .eyebrow { margin: 0; color: #24716c; font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .meta { color: #526269; }
+    code { padding: .15em .38em; border-radius: .35em; background: #edf3f3; color: #174c49; }
+    a { color: #12655f; }
+    footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid #dce4e8; color: #526269; font-size: .92rem; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #101718; color: #d8e4e4; }
+      main { background: #172123; border-color: #314043; box-shadow: none; }
+      h1, h2 { color: #dff8f5; }
+      .meta, footer { color: #a8b8b8; }
+      code { background: #253638; color: #b9f0e9; }
+      a { color: #81d9cf; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Lera Health Monitor</p>
+  <h1>WHOOP Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> July 26, 2026</p>
+
+  <p>
+    Lera Health Monitor is a personal, non-commercial health integration operated solely for
+    the WHOOP account owner's own use. This policy explains how the integration handles data
+    received from WHOOP after the account owner gives explicit OAuth consent.
+  </p>
+
+  <h2>Data accessed</h2>
+  <p>The integration requests only the following WHOOP permissions:</p>
+  <ul>
+    <li><code>read:recovery</code> — recovery score, heart rate variability and resting heart rate;</li>
+    <li><code>read:cycles</code> — physiological cycles, Strain and related heart-rate summaries;</li>
+    <li><code>read:workout</code> — workouts, activity Strain and related measurements;</li>
+    <li><code>read:sleep</code> — sleep records, performance and sleep-stage durations;</li>
+    <li><code>offline</code> — a refresh token used to maintain authorized access without repeatedly asking the account owner to sign in.</li>
+  </ul>
+  <p>The integration does not request permission to modify data in WHOOP.</p>
+
+  <h2>Purpose</h2>
+  <p>
+    WHOOP data is used to provide the account owner with a private combined view of sleep,
+    recovery, activity and training data, identify trends, and avoid double counting equivalent
+    observations from multiple wearable sources.
+  </p>
+
+  <h2>Storage and security</h2>
+  <p>
+    OAuth credentials and retrieved records are stored on a private health server controlled by
+    the operator. Access is limited by authentication, network controls, and restrictive filesystem
+    and database permissions. Tokens are not placed in client-side code or public logs.
+  </p>
+
+  <h2>Sharing and service providers</h2>
+  <p>
+    Personal data is not sold, rented, used for advertising, or shared for unrelated purposes.
+    Selected data may be processed by infrastructure or AI service providers only when necessary
+    to operate the private health assistant or answer a request initiated by the account owner.
+    Those providers do not receive permission to use the data for advertising.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Data is retained while the integration is authorized and for as long as it is needed for the
+    account owner's personal health record. When deletion is requested, active copies and OAuth
+    tokens are removed. Residual server-local backup copies expire under the configured retention
+    schedule within 14 days.
+  </p>
+
+  <h2>Revoking access</h2>
+  <p>
+    The account owner may revoke the integration in WHOOP account settings at any time. Revocation
+    stops future synchronization. The account owner may also request deletion by contacting the
+    operator using the contact method below.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Privacy, access and deletion requests may be initiated through the operator's
+    <a href="https://github.com/tellermihilova">GitHub profile</a>. Do not include health data,
+    OAuth credentials or other sensitive information in a public GitHub issue.
+  </p>
+
+  <h2>Changes</h2>
+  <p>Material changes to this policy will be published on this page with an updated effective date.</p>
+
+  <footer>
+    This policy applies only to Lera Health Monitor. WHOOP is a separate service governed by
+    WHOOP's own terms and privacy policy.
+  </footer>
+</main>
+</body>
+</html>
